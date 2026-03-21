@@ -2,15 +2,6 @@
     <template id="report_saleorder_document_inherit"
               inherit_id="sale.report_saleorder_document">
 
-        <!-- <xpath expr="//div[hasclass('page')]" position="inside">
-            <t t-if="doc.new_field">
-                <p><strong>New Field:</strong> <span t-esc="doc.new_field"/></p>
-            </t>
-            <t t-else="">
-                <p><strong>Поле New Field пустое!!!</strong></p>
-            </t>
-        </xpath> -->
-
     <xpath expr="//table[hasclass('table')]" position="before">
         <t t-if="doc.new_field">
             <p><strong>New Field:</strong> <span t-esc="doc.new_field"/></p>
